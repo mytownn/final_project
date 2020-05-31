@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".store3">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/tab_first"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="동물" />
+
+        <Button
+            android:id="@+id/tab_second"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="식물" />
+
+        <Button
+            android:id="@+id/tab_third"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@drawable/tab_color_selector"
+            android:background="@drawable/tab_bg_selector"
+            android:text="기타" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/extra"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/architecture" />
+
+    <ImageView
+        android:id="@+id/extra2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/camping" />
+
+    <ImageView
+        android:id="@+id/extra3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="277dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/landscape" />
+
+    <ImageView
+        android:id="@+id/extra4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/fountain" />
+
+    <ImageView
+        android:id="@+id/extra5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/mushroom" />
+
+    <ImageView
+        android:id="@+id/extra6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="273dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/property" />
+
+    <ImageView
+        android:id="@+id/extra7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="470dp"
+        android:src="@drawable/fence" />
+
+    <ImageView
+        android:id="@+id/extra8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="470dp"
+        android:src="@drawable/house" />
+
+
+
+
+</RelativeLayout>
