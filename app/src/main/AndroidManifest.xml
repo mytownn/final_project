@@ -2,21 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.itembox2">
 
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Itembox">
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Startpage"></activity>
+        <activity android:name=".Startpage"/>
+        <activity android:name=".timer_page" />
+        <activity android:name=".store2" />
+        <activity android:name=".win"/>
+        <activity android:name=".failed"/>
+        <activity android:name=".store3"/>
+        <activity android:name=".store"/>
+        <activity android:name=".Itembox">
+        </activity>
 
     </application>
 

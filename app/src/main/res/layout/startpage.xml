@@ -1,24 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:id="@+id/drawer_layout"
     tools:context=".Startpage">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/item_picture"
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="355dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="126dp"
+            android:layout_marginBottom="-558dp"
+            android:paddingLeft="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/main"
+            tools:layout_editor_absoluteY="40dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="117dp"
+            android:layout_marginRight="117dp"
+            android:layout_marginBottom="80dp"
+            android:text="휴대폰 사용을 줄여"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="133dp"
+            tools:layout_editor_absoluteY="415dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="228dp"
+            android:layout_height="31dp"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-74dp"
+            android:layout_marginBottom="42dp"
+            android:text="나만의 마을을 꾸며보세요!"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="438dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:text="Yejin's Village :)"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/share"
+            android:onClick="share_btnClick" /> //공유버튼
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="134dp"
+            android:layout_marginLeft="27dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/camera"
+            android:onClick="camera_btnClick" /> //카메라 버튼
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="5dp"
-        android:adjustViewBounds="true" />
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="com.example.myapplication.Startpage">
 
-    <TextView
-        android:id="@+id/item_name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="5dp" />
+        <ImageView
+            android:id="@+id/item_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+
+    </RelativeLayout>
+    //Navigation 호출
+    <include layout="@layout/activity_drawer"/>
+</android.support.v4.widget.DrawerLayout>

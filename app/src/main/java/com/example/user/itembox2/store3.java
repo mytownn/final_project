@@ -63,24 +63,24 @@ public class store3 extends Activity implements View.OnClickListener{
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.extra:
-            case R.id.extra2:
-            case R.id.extra3:
-            case R.id.extra4:
-            case R.id.extra5:
-            case R.id.extra6:
-            case R.id.extra7:
-            case R.id.extra8:
-
                 final EditText etEdit = new EditText(this);
                 AlertDialog.Builder dialog = new AlertDialog.Builder(store3.this);
                 dialog.setTitle("입력");
                 dialog.setView(etEdit);
+
                 // OK 버튼 이벤트
-                dialog.setPositiveButton("시작", new DialogInterface.OnClickListener() {
+                dialog.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
                     public void onClick(DialogInterface dialog, int which) {
-                        String inputValue = etEdit.getText().toString();
                         Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit.getText().toString();
                         intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra");
+                        int hour = 0;
+                        int minute = 30;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
                         startActivity(intent4);
                     }
                 });
@@ -91,6 +91,216 @@ public class store3 extends Activity implements View.OnClickListener{
                     }
                 });
                 dialog.show();
+                break;
+            case R.id.extra2:
+                final EditText etEdit2 = new EditText(this);
+                AlertDialog.Builder dialog2 = new AlertDialog.Builder(store3.this);
+                dialog2.setTitle("입력");
+                dialog2.setView(etEdit2);
+
+                // OK 버튼 이벤트
+                dialog2.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit2.getText().toString();
+                        intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra2");
+                        int hour = 1;
+                        int minute = 0;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
+                        startActivity(intent4);
+                    }
+                });
+                // Cancel 버튼 이벤트
+                dialog2.setNegativeButton("취소",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                dialog2.show();
+                break;
+            case R.id.extra3:
+                final EditText etEdit3 = new EditText(this);
+                AlertDialog.Builder dialog3 = new AlertDialog.Builder(store3.this);
+                dialog3.setTitle("입력");
+                dialog3.setView(etEdit3);
+
+                // OK 버튼 이벤트
+                dialog3.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit3.getText().toString();
+                        intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra3");
+                        int hour = 3;
+                        int minute = 0;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
+                        startActivity(intent4);
+                    }
+                });
+                // Cancel 버튼 이벤트
+                dialog3.setNegativeButton("취소",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                dialog3.show();
+                break;
+            case R.id.extra4:
+                final EditText etEdit4 = new EditText(this);
+                AlertDialog.Builder dialog4 = new AlertDialog.Builder(store3.this);
+                dialog4.setTitle("입력");
+                dialog4.setView(etEdit4);
+
+                // OK 버튼 이벤트
+                dialog4.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit4.getText().toString();
+                        intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra4");
+                        int hour = 1;
+                        int minute = 30;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
+                        startActivity(intent4);
+                    }
+                });
+                // Cancel 버튼 이벤트
+                dialog4.setNegativeButton("취소",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                dialog4.show();
+                break;
+            case R.id.extra5:
+                final EditText etEdit5 = new EditText(this);
+                AlertDialog.Builder dialog5 = new AlertDialog.Builder(store3.this);
+                dialog5.setTitle("입력");
+                dialog5.setView(etEdit5);
+
+                // OK 버튼 이벤트
+                dialog5.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit5.getText().toString();
+                        intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra5");
+                        int hour = 2;
+                        int minute = 0;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
+                        startActivity(intent4);
+                    }
+                });
+                // Cancel 버튼 이벤트
+                dialog5.setNegativeButton("취소",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                dialog5.show();
+                break;
+            case R.id.extra6:
+                final EditText etEdit6 = new EditText(this);
+                AlertDialog.Builder dialog6 = new AlertDialog.Builder(store3.this);
+                dialog6.setTitle("입력");
+                dialog6.setView(etEdit6);
+
+                // OK 버튼 이벤트
+                dialog6.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit6.getText().toString();
+                        intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra6");
+                        int hour = 1;
+                        int minute = 40;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
+                        startActivity(intent4);
+                    }
+                });
+                // Cancel 버튼 이벤트
+                dialog6.setNegativeButton("취소",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                dialog6.show();
+                break;
+            case R.id.extra7:
+                final EditText etEdit7 = new EditText(this);
+                AlertDialog.Builder dialog7 = new AlertDialog.Builder(store3.this);
+                dialog7.setTitle("입력");
+                dialog7.setView(etEdit7);
+
+                // OK 버튼 이벤트
+                dialog7.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit7.getText().toString();
+                        intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra7");
+                        int hour = 0;
+                        int minute = 20;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
+                        startActivity(intent4);
+                    }
+                });
+                // Cancel 버튼 이벤트
+                dialog7.setNegativeButton("취소",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                dialog7.show();
+                break;
+            case R.id.extra8:
+                final EditText etEdit8 = new EditText(this);
+                AlertDialog.Builder dialog8 = new AlertDialog.Builder(store3.this);
+                dialog8.setTitle("입력");
+                dialog8.setView(etEdit8);
+
+                // OK 버튼 이벤트
+                dialog8.setPositiveButton ("시작", new DialogInterface.OnClickListener()  {
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent4 = new Intent(getApplicationContext(), timer_page.class);
+                        String inputValue = etEdit8.getText().toString();
+                        intent4.putExtra("String",inputValue);
+                        intent4.putExtra("Name","extra8");
+                        int hour = 1;
+                        int minute = 10;
+                        int second = 0;
+                        intent4.putExtra("hour",hour);
+                        intent4.putExtra("minute",minute);
+                        intent4.putExtra("second",second);
+                        startActivity(intent4);
+                    }
+                });
+                // Cancel 버튼 이벤트
+                dialog8.setNegativeButton("취소",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                dialog8.show();
                 break;
             case R.id.tab_first:
                 Intent intent = new Intent(getApplicationContext(), store.class);
